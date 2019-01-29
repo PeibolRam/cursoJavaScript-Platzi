@@ -42,8 +42,11 @@ var personasAltas = personas.filter(esAlta)
 var personasBajas = personas.filter(esBaja)
 
 const pasarAlturaACms = persona => {
-  persona.altura = persona.altura * 100
-  return persona
+  
+  return {
+    ...persona,
+    altura: persona.altura * 100
+  }
 }
 
 var personasCms = personas.map(pasarAlturaACms)
