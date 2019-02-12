@@ -4,11 +4,11 @@ function Persona(nombre, apellido, altura){
     this.altura = altura
 }
 
-Persona.prototype.saludar = () => {
+Persona.prototype.saludar = function() {
     console.log(`Hola! me llamo ${this.nombre} ${this.apellido}`)
 }
 
-Persona.prototype.soyAlto = () => {
+Persona.prototype.soyAlto = function() {
     if (this.altura > 1.80)
     {
         console.log(`Soy alto mido ${this.altura} metros`)
